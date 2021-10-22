@@ -4,7 +4,7 @@ This project is aimed to help machine learning developers to quickly build and d
 
 ![Website mockup](assets/screenshot.png)
 
-This website is deployed in Heroku: https://flaskpytorch.herokuapp.com/
+This website is deployed in Heroku: https://fast-mountain-21864.herokuapp.com/
 
 By default, this app uses MobileNetV2 image classifier that was pre-trained on the ImageNet dataset. This can be easily changed with any custom deep learning model.
 
