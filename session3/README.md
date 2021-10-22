@@ -1,4 +1,4 @@
-# Flask/Pytorch/Docker starter app
+# Session 3 - Containerization and Docker - Flask - Pytorch - Docker 
 
 The documentation explains how to get up and running with either virtualenv or Docker.
 
