@@ -1,0 +1,36 @@
+.header{
+    position: relative;
+    width: 300px;
+  }
+  
+  .title{
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    color: #CECECE;
+    left: 0;
+    right: 0;
+    top:0;
+  }
+  .upload{
+    margin-top: 20px;
+  }
+  #drop {
+    height: 150px;
+    width: 450px;
+    border: 1.5px dashed black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+    padding: 100px;
+  }
+  
+  .content{
+    width: 500px;
+    display: none;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 12px;
+  }

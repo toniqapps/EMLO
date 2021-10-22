@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div align='center'>
+    <div class='upload'>
+        <div id="drop">Drag your PNG or JPEG files here (maximum 3 files)</div>
+        <br />
+        {% if results %}
+        <div class="container">
+            <div style='border:1px solid black;padding:10px;border-radius: 10px;'>
+                <h3>Previous Five Results</h3>
+                <br/>
+                <div class="row">
+                    {% for result in results %}
+                    <div class="col-sm">
+                        <div style='min-height:100px;margin-bottom: 5px;'>
+                            <img src="static/results/{{result}}" alt="User Image" style='width:100px;'>
+                        </div>
+                        {% set info = result.split('_') %}
+                        <h6><b>Name:&nbsp;</b>{{info[0]}}</h6>
+                        <h6><b>Confidence:&nbsp;</b>{{info[1]}}%</h6>
+                        <br/>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        </div>
+        </div>
+
+<!--Script-->
+
+<script type=text/javascript src="{{
+        url_for('static', filename='js/main.js') }}"></script>
+
+
+
+{% endblock %}
